@@ -5,8 +5,69 @@
 */
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: #FF8DCB;
+  --bg-color: #FFF1F7;
+  --focus-text-color: #FFC2E6;
+  --text-color: #353430;
+  --zagolovok-color: #353430;
+  --podzagolovok-color: #353430;
+  --decor-color: #353430;
+  --background-image: url(/images/cover-image-light.png);
+}
+.theme_light .header {
+  background-image: var(--background-image);
+}
+.theme_light .header__theme-menu-button {
+  color: #353430;
+}
+.theme_light .header__theme-menu-button_active {
+  border: 1px #353430 solid;
+}
+.theme_light .title {
+  color: var(--focus-text-color);
+  text-shadow: var(--header-text-shadow);
+}
+.theme_light .rec_text {
+  display: none;
+}
+.theme_light .rec_square {
+  border-top: 1px solid var(--decor-color);
+  border-right: 1px solid var(--decor-color);
+}
+.theme_light .rec_square::after {
+  content: "";
+  display: none;
+}
+.theme_light .square {
+  border-bottom: 1px solid var(--decor-color);
+  border-left: 1px solid var(--decor-color);
+}
+.theme_light .content_zagolovok {
+  color: var(--podzagolovok-color);
+}
+.theme_light .main {
+  color: var(--text-color);
+}
+.theme_light .footer_text {
+  color: var(--focus-text-color);
+  text-shadow: var(--footer-text-shadow);
+}
+@media(prefers-color-scheme: light) {
+  :root {
+    --accent-color: #FF8DCB;
+    --bg-color: #FFF1F7;
+    --focus-text-color: #FFC2E6;
+    --text-color: #353430;
+    --zagolovok-color: #353430;
+    --podzagolovok-color: #353430;
+    --decor-color: #353430;
+    --background-image: url(/images/cover-image-light.png);
+  }
+  .rec_text {
+    display: none;
+  }
+  .rec_square::after {
+    content: "";
+    display: none;
+  }
 }

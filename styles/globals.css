@@ -10,6 +10,10 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  font-family: IBM Plex Mono, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 h1,
