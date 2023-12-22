@@ -2,6 +2,9 @@
 
 .page {
   background: var(--bg-color);
+  background-attachment: fixed;
+  display: grid;
+  gap: 40px;
 }
 
 .header {
@@ -103,11 +106,11 @@
   text-shadow: 2px 2px 0px var(--accent-color);
   text-decoration: none;
 }
-.content_text a:hover{
+.content_text a:hover {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-.content_text a:focus{
+.content_text a:focus {
   text-decoration: none;
   outline: 1px solid var(--text-color);
   text-underline-offset: 2px;
@@ -193,6 +196,9 @@
   border-bottom: 1px var(--decor-color) solid;
 }
 @media (min-width:768px) {
+  .page {
+    gap: 60px;
+  }
   .header {
     padding: 20px;
     min-height: 1024px;
@@ -229,7 +235,7 @@
   }
   .content_zagolovok {
     min-width: 236px;
-    max-width: 236px; 
+    max-width: 236px;
   }
   .section_what {
     padding: 0 20px;
@@ -316,7 +322,7 @@
   }
   .content_zagolovok {
     min-width: 315px;
-    max-width: 315px; 
+    max-width: 315px;
   }
   .section_what_spisok {
     display: grid;
