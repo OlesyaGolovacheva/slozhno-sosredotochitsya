@@ -102,6 +102,12 @@
   display: grid;
   gap: 50px;
 }
+.content_text {
+  color: #F1B2CE;
+  font-family: IBM Plex Mono, sans-serif;
+  font-size: var(--font-size);
+  line-height: 130%
+}
 .content_text a {
   text-shadow: 2px 2px 0px var(--accent-color);
   text-decoration: none;
@@ -119,17 +125,17 @@
 .section_why {
   padding: 0 10px;
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 .section_what {
   padding: 0 10px;
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 .section_how {
   padding: 0 10px;
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 .content_zagolovok {
   color: var(--zagolovok-color);
@@ -144,6 +150,7 @@
   margin-top: 20px;
 }
 .podzagolovok, .gallery_zagolovok h2 {
+  font-size: var(--font-size);
   color: #000028;
   font-weight: 700;
   line-height: 130%;
@@ -221,7 +228,7 @@
   }
   .square {
     bottom:20px;
-    left:20px;
+    left:20px;                      
   }
   .main {
     margin-top: 60px;
