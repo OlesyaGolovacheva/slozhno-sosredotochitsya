@@ -146,10 +146,10 @@
 .podzagolovok {
   margin-bottom: 10px;
 }
-.section_how_spisok .no_padding{
+.section_how_spisok .no_padding {
   margin-bottom: 0px;
 }
-.content_spisok  {
+.content_spisok {
   display: grid;
   gap: 20px;
 }
