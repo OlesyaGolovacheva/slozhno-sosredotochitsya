@@ -146,8 +146,12 @@
 .podzagolovok {
   margin-bottom: 10px;
 }
-.content_spisok li:not(:first-child) {
-  margin-top: 20px;
+.section_how_spisok .no_padding{
+  margin-bottom: 0px;
+}
+.content_spisok  {
+  display: grid;
+  gap: 20px;
 }
 .podzagolovok, .gallery_zagolovok h2 {
   font-size: var(--font-size);
@@ -326,16 +330,12 @@
     max-width: 491px;
   }
   .content_zagolovok {
-    min-width: 315px;
     max-width: 315px;
   }
   .section_what_spisok {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
-  }
-  .section_what_spisok li:first-child {
-    margin-top: 20px;
   }
   .footer {
     padding: 20px;
