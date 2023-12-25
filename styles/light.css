@@ -10,18 +10,14 @@
   --focus-text-color: #FFC2E6;
   --text-color: #353430;
   --zagolovok-color: #353430;
-  --podzagolovok-color: #353430;
+  --subtitle-color: #353430;
+  --button-color: #353430;
   --decor-color: #353430;
-  --background-image: url(/images/cover-image-light.png);
+  --background-image: url(../images/cover-image-light.png);
+  --border-button-hover: 1px solid rgba(50, 49, 45, 0.40);
 }
 .theme_light .header {
   background-image: var(--background-image);
-}
-.theme_light .header__theme-menu-button {
-  color: #353430;
-}
-.theme_light .header__theme-menu-button_active {
-  border: 1px #353430 solid;
 }
 .theme_light .title {
   color: var(--focus-text-color);
@@ -42,8 +38,8 @@
   border-bottom: 1px solid var(--decor-color);
   border-left: 1px solid var(--decor-color);
 }
-.theme_light .content_zagolovok {
-  color: var(--podzagolovok-color);
+.theme_light .content_title {
+  color: var(--subtitle-color);
 }
 .theme_light .main {
   color: var(--text-color);
@@ -52,6 +48,7 @@
   color: var(--focus-text-color);
   text-shadow: var(--footer-text-shadow);
 }
+
 @media(prefers-color-scheme: light) {
   :root {
     --accent-color: #FF8DCB;
@@ -59,9 +56,11 @@
     --focus-text-color: #FFC2E6;
     --text-color: #353430;
     --zagolovok-color: #353430;
-    --podzagolovok-color: #353430;
+    --subtitle-color: #353430;
+    --button-color: #353430;
     --decor-color: #353430;
     --background-image: url(/images/cover-image-light.png);
+    --border-button-hover: 1px solid rgba(50, 49, 45, 0.40);
   }
   .rec_text {
     display: none;
