@@ -8,12 +8,12 @@
   --bg-color: #000028;
   --focus-text-color: #DB00FF;
   --text-color: #F1B2CE;
-  --zagolovok-color: #FF0070;
+  --title-color: #FF0070;
   --subtitle-color: #000028;
   --button-color:#FF0070;
-  --header-text-shadow: 4px 4px 0px #FF0070;
-  --footer-text-shadow: 2px 2px 0px #FF0070;
   --decor-color: #FF0070;
   --border-button-hover: 1px solid rgba(255, 0, 112, 0.40);
   --background-image: url(../images/cover-image-dark.png);
+  --text-shadow-title-desctop: 4px 4px 0px #FF0070;
+  --text-shadow-title-mobile: 4px 4px 0px #FF0070;
 }

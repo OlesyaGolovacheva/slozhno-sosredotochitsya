@@ -26,7 +26,7 @@
   border-right: 1px var(--decor-color) solid;
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 10px;  
 }
 .decorated-zone::after {
   content: "";
@@ -50,20 +50,19 @@
   font-size: var(--font-size);
   text-transform: uppercase;
 }
-.rec_square {
-  width: 25px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.rec_text {
+  margin-right: 28px;
 }
-.rec_square::after {
+.rec_text::after {
   content: "";
-  width: 9px;
-  height: 9px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: var(--accent-color);
-  box-shadow: 0 0 6px 4px var(--accent-color);
+  box-shadow: 0 0 6px 3px var(--accent-color);
 }
 .header__theme-menu {
   align-self: center;
@@ -98,7 +97,7 @@
 }
 .title {
   color: var(--focus-text-color);
-  text-shadow: var(--header-text-shadow);
+  text-shadow: var(--text-shadow-title-mobile);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 95.7px;
@@ -154,7 +153,7 @@
   gap: 20px;
 }
 .content_title {
-  color: var(--zagolovok-color);
+  color: var(--title-color);
   font-size: var(--font-size);
   font-weight: 700;
   line-height: 23.4px;
@@ -162,14 +161,14 @@
 .subtitle {
   margin-bottom: 10px;
 }
-.section_how_spisok .no_padding {
+.section_how_list .no_padding {
   margin-bottom: 0px;
 }
-.content_spisok {
+.content_list {
   display: grid;
   gap: 20px;
 }
-.subtitle, .gallery_zagolovok h2 {
+.subtitle, .gallery_title h2 {
   font-size: var(--font-size);
   color: #000028;
   font-weight: 700;
@@ -198,7 +197,7 @@
 }
 .footer_text {
   color: var(--focus-text-color);
-  text-shadow: var(--footer-text-shadow);
+  text-shadow: var(--text-shadow-title-mobile);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
@@ -270,7 +269,7 @@
   .gallery img {
     height: 100%;
   }
-  .gallery_zagolovok {
+  .gallery_title {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -328,6 +327,7 @@
   }
   .title {
     line-height: 130px;
+    text-shadow: var(--text-shadow-title-desctop);
   }
   .title-decor {
     max-width: 491px;
@@ -335,7 +335,7 @@
   .content_title {
     max-width: 315px;
   }
-  .section_what_spisok {
+  .section_what_list {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
@@ -343,5 +343,8 @@
   .footer {
     padding: 20px;
     min-height: 768px;
+  }
+  .footer_text {
+    text-shadow: var(--text-shadow-title-desctop);
   }
 }
